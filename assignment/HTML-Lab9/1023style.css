@@ -1,0 +1,43 @@
+p{
+
+  size:20px;
+  background-color: yellow;
+  font-family: Arial;
+  width:350px;
+
+}
+
+.p1{
+  size:20px;
+  font-family: Arial;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+}
+
+h3{
+
+}
+.credits1
+{
+  word-spacing: 0.2em;
+}
+.credits
+{
+  letter-spacing: 0.2em;
+}
+
+.gray{
+    background-color: gray;
+    text-indent: -4em;
+}
+.white{
+    
+    background-color: white;
+    text-indent: 4em;
+}
+.yellow{
+
+    background-color: yellow;
+    text-indent: 4em;
+    margin-left: 8em;
+}

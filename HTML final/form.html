@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form-final</title>
+        <link rel="icon shortcut" href="./images/favicon.ico">
+        <!-- Bootstrap https://getbootstrap.com/ -->
+        <!-- Bootstrap.min.css
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
+        <!-- Customize Bootstrap CSS -->
+        <link rel="stylesheet" href="./scss/bootstrap.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <!-- style.css -->
+        <link rel="stylesheet" href="./stylesheets/style.css"><!-- 覆蓋bootstrap -->
+    </head>
+</head>
+
+<body>
+        <!-- navbar -->
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#">Form</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Index </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar end -->
+
+        <div class="container custom-container-width">
+                <form id="createWorkForm">
+                    <h2>Create Work Form</h2>
+    
+                    <div class="form-group">
+                        <label for="workTitleInput">Work Title Input</label>
+                        <input id="workTitleInput" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="workSubtitleInput">Work Subtitle Input</label>
+                        <input id="workSubtitleInput" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="workThumbnailInput">Work Thumbnail Input</label>
+                        <input type="text" id="workThumbnailInput" class="form-control"
+                                value="https://picsum.photos/id/999/1200/600">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Create Work From</button>
+                    </div>
+                </form>
+
+            </form>
+    
+        </div>
+
+        
+    
+
+
+        <!-- jquery.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <!-- bootstrap.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+        
+
+        <!-- Firebase APP -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <!-- Firebase Authentication -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+        <!-- Firebase Firestore -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+        <script>
+            // TODO: Replace the following with your app's Firebase project configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyDIFRJmopaA-kC4IzM-kJ0aHQgwynegR10",
+                authDomain: "ntut-web-programming-1225.firebaseapp.com",
+                projectId: "ntut-web-programming-1225",
+                storageBucket: "ntut-web-programming-1225.appspot.com",
+                messagingSenderId: "661250227398",
+                appId: "1:661250227398:web:d7caa79f3b3963543b6bc7",
+                measurementId: "G-REZB2EG1PV"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            // Define Database(Cloud Firestore)
+            var db = firebase.firestore();
+        </script>
+
+        <!-- main.js -->
+        <script src="./javascripts/main.js"></script>
+</body>
+
+</html>

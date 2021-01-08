@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- fontawesome.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <!-- navbar-brand -->
+        <a href="#" class="navbar-brand">Brand</a>
+        <!-- navbar-list -->
+        <div class="navbar-list">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </div>
+        <!-- navbar-toggler button for mobile -->
+        <button class="navbar-toggler">
+            <div class="line"></div>
+        </button>
+    </nav>
+    <!-- navbar end -->
+    <section>
+        <h1>Relative</h1>
+        <p>Set the button below move position on hover state.</p>
+        <button class="relative-btn">
+            Hover Me
+            <i class="fas fa-hand-point-up"></i>
+        </button>
+    </section>
+    <section>
+        <h1>Absolute</h1>
+        <p>
+            Position the small box below to the bottom right corner of the large box.
+        </p>
+        <div class="outer-box">
+            <div class="inner-box"></div>
+            <div class="inner-box2"></div>
+            <p>Text example.</p>
+        </div>
+    </section>
+    <section>
+        <h1>Position Exercise</h1>
+        <!-- card -->
+        <div class="card">
+            <!-- card-header -->
+            <div class="card-header">
+                <img class="card-img" width="100%" src="./images/card-1.jpg">
+                <!-- card-btns -->
+                <div class="card-btns">
+                    <button>
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button>
+                        <i class="fas fa-thumbs-up"></i>
+                    </button>
+                    <button>
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    
+                </div>
+                <!-- card-btns end -->
+            </div>
+            <!-- card-header end -->
+            <!-- card-body -->
+            <div class="card-body">
+                <h4>Card Title</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate veritatis illo expedita a ab
+                    officiis
+                    vero! Eaque, voluptatibus quam. Officia recusandae voluptate minima expedita commodi, vero hic ut
+                    alias
+                    porro?
+                </p>
+            </div>
+            <!-- card-body end -->
+        </div>
+        <!-- card end -->
+    </section>
+    <!-- import main.js file -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

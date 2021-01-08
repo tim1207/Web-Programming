@@ -1,0 +1,20 @@
+h1,h3{
+  color:pink;
+  size:20px;
+
+  font-family: Arial;
+
+}
+h2{
+  color : maroon;
+  margin-left: 40px;
+}
+
+i{color:green !important;}
+i{color:red;}
+p b {color:blue !important;}
+p b {color:violet;}
+body{
+  font-family: Arial;
+  background-color:lightblue;
+}

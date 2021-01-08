@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    // border: 1px solid black;
+}
+
+body {
+    margin: 0;
+    min-height: 1200px;
+}
+
+$dark: #333;
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    background: $dark;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-list a {
+    margin-right: 15px;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+// For mobile web
+@media (max-width: 900px) {
+    .navbar {
+
+    }
+    .navbar-list {
+        position: fixed;
+        left: -200px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        transition: all .5s ease-out;
+    }
+
+    // Select elements that have both 
+    // navbar-list and active class.
+    .navbar-list.active {
+        left:0px;
+    }
+
+    .navbar-list a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+    }
+    .line,
+    .line:before,
+    .line:after{
+        transition: all .5s ease;
+    }
+    //select <class="line active">
+    .line.active{
+        transform: rotate(45deg);
+        &:before{
+            transform: rotate(90deg);
+            top: 0px;
+        }
+        &:after{
+            bottom: 0px;
+        }
+    }
+
+    .line {
+        width: 20px;
+        height: 2px;
+        position: relative;
+        background: white;
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: white;
+            left: 0;
+        }
+        &:before {
+            top: -6px;
+        }
+        &:after {
+            bottom: -6px;
+        }
+    }
+}
+
+
+section {
+    padding: 100px 15px;
+    h1 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 2;
+    }
+    &:nth-child(2n+1) {
+        background: #eee;
+    }
+}

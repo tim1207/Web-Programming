@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/*=============================================
+=                  General                    =
+=============================================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+.navbar {
+  -webkit-box-shadow: 0 3px 18px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 3px 18px rgba(0, 0, 0, 0.11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+/* TODO: 加入背景圖片 */
+#header {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  padding: 200px 0px;
+  background-image: url(../images/photo1.JPG);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/*=============================================
+=                  Section 2                  =
+=============================================*/
+.gallery-block,
+.gallery-text {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.gallery-block {
+  background-size: cover;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.gallery-text {
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.gallery-block:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#galleryImage1 {
+  background-image: url("../images/photo1.JPG");
+}
+
+#galleryImage2 {
+  background-image: url("../images/photo2.JPG");
+}
+
+#galleryImage3 {
+  background-image: url("../images/photo3.JPG");
+}
+
+#galleryImage4 {
+  background-image: url("../images/photo4.JPG");
+}
+
+#galleryImage5 {
+  background-image: url("../images/photo5.JPG");
+}
+
+#galleryImage6 {
+  background-image: url("../images/photo6.JPG");
+}
+
+#galleryImage7 {
+  background-image: url("../images/photo7.JPG");
+}
+
+#galleryImage8 {
+  background-image: url("../images/photo8.JPG");
+}
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-end p {
+  font-size: 8px;
+  margin: 0;
+}
+
+#goBackBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+.container.custom-container-width {
+  margin-top: 55px;
+}
+
+.col-md-8 {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
